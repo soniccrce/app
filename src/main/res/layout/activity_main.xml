@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@android:id/tabhost">
+             
+    <LinearLayout android:id="@+id/LinearLayout01"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+                    
+    <TabWidget android:id="@android:id/tabs"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+    </TabWidget>
+                    
+    <FrameLayout android:id="@android:id/tabcontent"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <Button
+            android:id="@+id/show1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:background="@drawable/collapse"/>
+
+
+        <com.project.be.samplelayout.Sliding
+            android:id="@+id/sliding1"
+            android:orientation="vertical"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="left"
+            android:padding="1px"
+            android:background="#ffffff">
+            <Button android:id="@+id/check1"
+                android:layout_width="wrap_content"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:text="Option1" />
+            <Button android:id="@+id/check2"
+                android:layout_width="wrap_content"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:text="Option2" />
+            <Button android:id="@+id/check3"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option3" />
+        </com.project.be.samplelayout.Sliding>
+
+    </LinearLayout>
+
+</TabHost>
